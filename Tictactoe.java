@@ -3,11 +3,11 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class TicTacToe extends JFrame implements ActionListener {
-    private JFrame frame;
-    private JButton[] buttons;
-    private JButton resetButton;
     private JLabel textField;
+    private JFrame frame;
+    private JButton resetButton;
     private boolean isPlayersTurn;
+    private JButton[] buttons;
 
     public static void main(String[] args) {
         TicTacToe tictactoe = new TicTacToe();
@@ -172,7 +172,7 @@ public class TicTacToe extends JFrame implements ActionListener {
         for (int i = 1; i < 10; i++) {
             buttons[i].setText("");
             buttons[i].setEnabled(true);
-            buttons[i].setBackground(null);
+            buttons[i].setBackground(Color.WHITE);
         }
         textField.setText("X Turn");
         textField.setForeground(new Color(38, 184, 220));
